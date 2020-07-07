@@ -19,7 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## See above comment for explanation of this second function.
+## The second function solves for inverse matrices and sends them to makeCacheMatrix
+## to be stored and accessed for later use.
 
 cacheSolve <- function(x, ...){
   inv <- x$getInverse()
